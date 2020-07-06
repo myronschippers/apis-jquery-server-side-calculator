@@ -14,24 +14,24 @@
 <body>
   <h1>Calculate Something</h1>
 
-  <form>
+  <form class="js-equation-form">
     <input
       type="number"
       placeholder="Enter a Number"
       class="js-num1"
       required
     >
-    <button type="button" class="js-btn-op-plus">+</button>
-    <button type="button" class="js-btn-op-minus">-</button>
-    <button type="button" class="js-btn-op-multi">*</button>
-    <button type="button" class="js-btn-op-divide">/</button>
-    <button class="js-btn-submit">=</button>
+    <button type="button" class="js-btn-op" data-op="+">+</button>
+    <button type="button" class="js-btn-op" data-op="-">-</button>
+    <button type="button" class="js-btn-op" data-op="*">*</button>
+    <button type="button" class="js-btn-op" data-op="/">/</button>
     <input
-      type="number"
-      placeholder="Enter a Number"
-      class="js-num2"
-      required
+    type="number"
+    placeholder="Enter a Number"
+    class="js-num2"
+    required
     >
+    <button class="js-btn-submit">=</button>
     <button type="button" class="js-btn-clear">C</button>
   </form>
 

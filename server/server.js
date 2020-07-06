@@ -15,13 +15,13 @@ function calculateEquation(equation) {
   let solution;
 
   if (equation.operator === '+') {
-    solution = equation.num1 + equation.num2;
+    solution = Number(equation.num1) + Number(equation.num2);
   } else if (equation.operator === '-') {
-    solution = equation.num1 - equation.num2;
+    solution = Number(equation.num1) - Number(equation.num2);
   } else if (equation.operator === '/') {
-    solution = equation.num1 / equation.num2;
+    solution = Number(equation.num1) / Number(equation.num2);
   } else if (equation.operator === '*') {
-    solution = equation.num1 * equation.num2;
+    solution = Number(equation.num1) * Number(equation.num2);
   }
 
   equation.solution = solution;
