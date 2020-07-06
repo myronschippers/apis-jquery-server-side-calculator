@@ -48,6 +48,11 @@ app.post('/api/equation', (req, res) => {
   res.sendStatus(201);
 });
 
+// send back the full history
+app.get('/api/equation', (req, res) => {
+  res.send(history);
+});
+
 app.listen(PORT, function() {
   console.log(`Server running on PORT ${PORT}`);
 });
