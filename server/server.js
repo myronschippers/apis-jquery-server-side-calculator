@@ -7,6 +7,7 @@ const history = [];
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(express.static('server/public'));
 
 
 function calculateEquation(equation) {
