@@ -11,6 +11,19 @@ app.use(bodyParser.json());
 
 function calculateEquation(equation) {
   // do the maths
+  let solution;
+
+  if (equation.operator === '+') {
+    solution = equation.num1 + equation.num2;
+  } else if (equation.operator === '-') {
+    solution = equation.num1 - equation.num2;
+  } else if (equation.operator === '/') {
+    solution = equation.num1 / equation.num2;
+  } else if (equation.operator === '*') {
+    solution = equation.num1 * equation.num2;
+  }
+
+  equation.solution = solution;
 
   // return solved equation
   return equation;
